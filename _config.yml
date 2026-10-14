@@ -1,10 +1,23 @@
 title: Vlad's Blog
-description: A personal blog by Vlad Baciu
+description: A personal blog focused on Embedded Systems, Machine Learning, and Security
 author: Vlad Baciu
 theme: jekyll-theme-minimal
+markdown: kramdown
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog
+  - title: Projects
+    url: /projects
+  - title: About
+    url: /about
 
 # Social links
 github_username: vladBaciu
+email: baciuvladeusebiu@gmail.com
 
 # Footer text
 footer-text: © 2026 Vlad Baciu. All rights reserved.

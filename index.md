@@ -1,18 +1,31 @@
+---
+layout: default
+title: Home
+---
+
 # Welcome to My Blog
 
-Hello! I'm **Vlad Baciu**, and this is my personal blog where I share thoughts, projects, and ideas.
+Hello! I'm **Vlad Baciu**, a developer passionate about **Embedded Systems**, **Machine Learning**, and **Security**.
 
-## About Me
+I focus on applying machine learning to wearable sensors and edge computing, particularly in **Photoplethysmography (PPG)** for non-invasive health monitoring.
 
-I'm a developer passionate about **Embedded Systems**, **Machine Learning**, and **Security** - particularly applied to wearable sensors and edge computing. My current focus is on photoplethysmography (PPG) for non-invasive health monitoring and machine learning on resource-constrained devices.
+## 📌 Quick Links
 
-## Recent Posts
-
-- [Featured Projects](./posts/featured-projects.md) - Overview of my pinned repositories and active research areas
-- [First Post](./posts/first-post.md) - Getting started with my blog
+- **[Blog Posts](/blog)** - Read my latest articles
+- **[Featured Projects](/projects)** - Explore my repositories
+- **[About Me](/about)** - Learn more about me
 
 ---
 
-**Stay tuned for more content!**
+## 🔥 Latest Posts
 
-📧 Contact: baciuvladeusebiu@gmail.com | vlad-eusebiu.baciu@vub.be
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
+
+[View all posts →](/blog)

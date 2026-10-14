@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article>
+    <h1>{{ page.title }}</h1>
+    <p class="date">📅 Published on {{ page.date | date: "%B %d, %Y" }}</p>
+    
+    {{ content }}
+    
+    <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
+    <p><a href="/blog">← Back to Blog</a></p>
+</article>
